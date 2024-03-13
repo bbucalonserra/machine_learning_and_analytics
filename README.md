@@ -18,6 +18,19 @@ O aprendizado supervisionado pode ser divido em duas categorias:
 
 Além disso, é comum que particionar os dados de entrada (rotulados) em dois conjuntos:
   * De treinamento - Servirá para construir o modelo
-  * De teste - Também chamado na literatura de conjunto de validação, servirá para verificar como o modelo se comportaria em dados não vistos, de forma que possamos ajustá-lo, se necessário, para a construção final do modelo a ser aplicado a novos dados em que ainda não conhecemos a saída esperada.
+  * De teste - Também chamado na literatura de conjunto de validação, servirá para verificar como o modelo se comportaria em dados não vistos, de forma que possamos ajustá-lo, se necessário, para a construção final do modelo a ser aplicado a novos dados em que ainda não conhecemos a saída esperada
 
+#### 3.1 Classificação
+A classificação é uma das tarefas de machine learning mais importantes e populares. **Pode-se definir um problema de classificação, informalmente, como a busca por uma função matemática que permita associar corretamente cada exemplo Xi de um conjunto de dados a um único rótulo categórico (Yi), denominado classe.** A classificação pode ser utilizada quando é o objetivo é prever a classe ou categoria de um determinado exemplo com base em suas características ou atributos. Fluxo:
+
+ 1. A partir de uma base de dados rotulada , gera-se dois subconjuntos: base de treino (70% dos dados) e base de teste (30% dos dados)
+ 2. É retirada da base de treino os rótulos (ou as categorias que deseja-se descobrir) e é submetida ao classificador para o treinamento do modelo que é calibrado de acordo com os dados apresentados
+ 3. Apresentam-se os exemplos da base de teste para o modelo que deverá realizar predições de suas classes
+ 4. Compara-se as classes preditas com as classes verdadeiras da base de teste, irá se medir a qualidade do modelo, isto é, sua habilidade em classificar corretamente exemplos nao vistos durante o treinamento 
+
+Observação: o classificador é o algoritmo usado para predição
+
+
+*Holdout* - (separação do dataset em bases de treino e teste): o modelo é construído com um conjunto de dados e seu erro de generalização é avaliado com outro, não utilizado para o treinamento.
+*overfitting* - quando o classificador se ajustou em excesso ao conjunto de treinamento
 
