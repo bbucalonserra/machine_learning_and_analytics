@@ -33,4 +33,9 @@ Observação: o classificador é o algoritmo usado para predição
 
 *Holdout* - (separação do dataset em bases de treino e teste): o modelo é construído com um conjunto de dados e seu erro de generalização é avaliado com outro, não utilizado para o treinamento.
 *overfitting* - quando o classificador se ajustou em excesso ao conjunto de treinamento
+*underfitting* - o classificador se ajustou pouco ao conjunto de treinamento, não sendo adequado para realizar predições no conjunto de teste.
+
+
+
+COMO ESCOLHER O MELHOR MODELO? DILEMA BIAS? CLASSIFICAÇÃO? K?
 
