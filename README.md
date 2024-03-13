@@ -15,6 +15,7 @@ Como mencionado a cima, no aprendizado supervisionado, o modelo é construído a
 O aprendizado supervisionado pode ser divido em duas categorias:
   * Classificação - Usada para prever a classe ou categoria de um objeto. Exemplo: "Deve-se conceder ou não crédito para um cliente de um banco?", neste caso a variável a ser predita é categórica, pois a resposta deverá ser sim ou não (**saída sempre categórica**)
   * Regressão - Usada para prever um valor numérico ou contínuo. Exemplo: "Deve-se conceder qual valor de crédito a um cliente de um banco?", neste caso, a variável a ser predita é numérica (contínua ou disreta) (**saída sempre numérica discreta ou contínua)**
+
 Além disso, é comum que particionar os dados de entrada (rotulados) em dois conjuntos:
   * De treinamento - Servirá para construir o modelo
   * De teste - Também chamado na literatura de conjunto de validação, servirá para verificar como o modelo se comportaria em dados não vistos, de forma que possamos ajustá-lo, se necessário, para a construção final do modelo a ser aplicado a novos dados em que ainda não conhecemos a saída esperada.
