@@ -30,12 +30,36 @@ A classificação é uma das tarefas de machine learning mais importantes e popu
 
 Observação: o classificador é o algoritmo usado para predição
 
-
 *Holdout* - (separação do dataset em bases de treino e teste): o modelo é construído com um conjunto de dados e seu erro de generalização é avaliado com outro, não utilizado para o treinamento.
 *overfitting* - quando o classificador se ajustou em excesso ao conjunto de treinamento
 *underfitting* - o classificador se ajustou pouco ao conjunto de treinamento, não sendo adequado para realizar predições no conjunto de teste.
 
+Para evitar problemas com overliftting e underfitting, temos:
+ * **Dilema bias x variância**, em que: **viés (Bias)** representa a simplificação feita pelo modelo durante o treinamento, um modelo com alto viés pode subestimar a complexidade dos dados e, portanto, pode não capturar adequadamente os padrões nos dados; e **variância** representa a sensibilidade do modelo às flutuações nos dados de treinamento, um modelo com alta variância é muito sensível aos dados de treinamento específicos e pode não generalizar bem para novos dados. **O objetivo é encontrar um ponto de equilíbrio onde o modelo tenha baixo viés e baixa variância**
+ * **Validação cruzada**, que é uma técnica usada para avaliar a capacidade de generalização de um modelo de aprendizado de máquina. Em vez de simplesmente dividir os dados em conjuntos de treinamento e teste uma única vez, a validação cruzada divide os dados em k partes (folds), treina o modelo em k-1 partes e avalia o desempenho no fold restante. Isso é repetido k vezes, cada vez com um fold diferente reservado para teste. O desempenho médio do modelo em todos os folds de teste é então calculado
+
+#### 3.1.1 Métricas de Avaliação
+A cada problema, os algoritmos disponíveis devem ser experimentados, com diversas configurações, para identificar os que obtêm melhor desempenho. Para isso, precisamos utilizar métricas de avaliação apropriadas. Existem diversas medidas para estimar o desempenho de um modelo de aprendizado supervisionado, ou seja, para avaliar o modelo. 
+Para calcular as principais métricas de avaliação, é necessário calcular **matriz de confusão**, em que mostra a contagem de verdadeiros positivos, falsos positivos, verdadeiros negativos e falsos negativos produzidos pelo modelo. A partir dessa matriz, várias métricas de avaliação, como precisão, recall, F1-score, entre outras, podem ser calculadas para entender o desempenho do modelo em diferentes cenários de classificação.
+
+##### 3.1.1.1 Acurácia
+Mede a proporção de todas as previsões corretas do modelo em relação ao número total de previsões
+Acurácia = (Verdadeiros Positivos + Verdadeiros Negativos) / (Verdadeiros Positivos + Falsos Positivos + Falsos Negativos + Verdadeiros Negativos)
+
+##### 3.1.1.2 Precisão
+Proporção de todas as previsões corretas feitas pelo modelo em relação ao número total de previsões
+Precisão = (VP + VN) / (VP + VN + FP + FN)
+
+##### 3.1.1.3 Recall
+Mede a capacidade do modelo de encontrar todos os casos positivos.
+Recall = VP / (VP + FN)
+
+##### 3.1.1.4 ROC
+A curva ROC (receiver operating characteristic) contrasta os benefícios de uma classificação correta (TVP, sensibilidade ou recall) e o custo de uma classificação incorreta (TFP ou 1-especificidade), que varia entre 0 (predições 100% incorretas) e 1 (predições 100% corretas), em que:
+ * Sensibilidade = TVP = Recall
+ * Especificidade = 1 - Especificidade = TFP = FP / (FP + VN)
 
 
-COMO ESCOLHER O MELHOR MODELO? DILEMA BIAS? CLASSIFICAÇÃO? K?
+
+
 
