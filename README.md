@@ -59,6 +59,58 @@ A curva ROC (receiver operating characteristic) contrasta os benefícios de uma 
  * Sensibilidade = TVP = Recall
  * Especificidade = 1 - Especificidade = TFP = FP / (FP + VN)
 
+#### 3.1.2 Algoritmos
+Algoritmos de machine learning que podem ser usados para problemas de classificação.
+
+##### 3.1.2.1 - KNN (k-nearest neighbours)
+O algoritmo KNN (k-nearest neighbours, ou k-vizinhos mais próximos) é um algoritmo não paramétrico que não assume premissas sobre a distribuição dos dados. O KNN utiliza uma métrica de distância para encontrar as k instâncias mais semelhantes nos dados de treinamento para uma nova instância. Além disso, considera a classe mais comum entre os vizinhos como a predição da classe da nova instância.
+Limitações: a performance de predição pode ser lenta em datasets grandes; é sensível a características irrelevantes, uma vez que todas as características contribuem para o cálculo da distância e, consequentemente, para a predição; e é necessário testar diferentes valores de k e a métrica de distância a utilizar.
+
+##### 3.1.2.2 - Árvore de Decisão
+A Árvore de Decisão é um dos modelos preditivos mais simples de ser interpretado, e é inspirada na forma como humanos tomam decisões. Uma de suas principais vantagens é apresentar a informação visualmente, de uma forma fácil de entender. Há diferentes algoritmos para a elaboração de uma Árvore de Decisão, como:
+ * ID3
+ * CTree
+ * C4.5
+ * C5.0
+ * CART
+
+##### 3.1.2.3 - Naive Bayes
+O Naive Bayes, ou Bayes Ingênuo, é um classificador genérico e de aprendizado dinâmico. É um dos métodos mais utilizados para classificação – especialmente em aplicações de text mining, previsões em tempo real e/ou sistemas embarcados –, por ser rápido computacionalmente e só necessitar de um pequeno número de dados de treinamento. Ele é especialmente adequado quando o problema tem um grande número de atributos (características), e determina a probabilidade de um exemplo pertencer a uma determinada classe. Esse método é chamado de ingênuo (naive, em inglês) porque desconsidera completamente a correlação entre os atributos (características), tratando cada um de forma independente. Além disso, o nome contém a palavra Bayes por ser baseado no teorema de Bayes, que determina a probabilidade de um evento com base em um conhecimento prévio (a priori) que pode estar relacionado a ele.
+
+##### 3.1.2.4 - SVM
+O SVM (support vector machine, ou máquina de vetor de suporte) é um dos algoritmos mais efetivos para classificação. Pode ser aplicado em dados lineares ou não lineares.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
