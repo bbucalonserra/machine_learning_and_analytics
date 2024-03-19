@@ -79,6 +79,10 @@ O Naive Bayes, ou Bayes Ingênuo, é um classificador genérico e de aprendizado
 O SVM (support vector machine, ou máquina de vetor de suporte) é um dos algoritmos mais efetivos para classificação. Pode ser aplicado em dados lineares ou não lineares.
 
 
+#### 3.2 Regressão
+Usada para prever um valor numérico ou contínuo. Exemplo: "Deve-se conceder qual valor de crédito a um cliente de um banco?", neste caso, a variável a ser predita é numérica (contínua ou disreta) (**saída sempre numérica discreta ou contínua)**
+
+
 
 
 
